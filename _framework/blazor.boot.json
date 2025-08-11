@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Pyrops.eu",
   "resources": {
-    "hash": "sha256-J5G0DXGxvjkH7yA7VkZ+sZX1Pw8LkbwdyNcpB5ybRrY=",
+    "hash": "sha256-SABm7lMfx+AmotOh5z+3ypNKV0H7aGQiMY7CmI16ya0=",
     "jsModuleNative": {
       "dotnet.native.8.0.19.ihm50f0zha.js": "sha256-O/NCYcAN9uPocD7ns7AzF/cqx7f5vL1PTJCQs0vEXyk="
     },
@@ -31,7 +31,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-6187ynEahDlSLMBvD4vAmiLpZ3clRb5xu6rM7O8AxNo=",
       "Microsoft.JSInterop.wasm": "sha256-DJUAkuEcQy58dHIzMO7Yx7QurjKj1Srp/q8SwT8DQ/8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-ePdM5cjDZG1jsIGmUlzOBGH2O6dZI7MzER1/yJqgA64=",
-      "Pyrops.eu.wasm": "sha256-Y+JJAx+WhtnxLZIu2SyKctybM9cjAJhWFlpsYnwzoxo=",
+      "Pyrops.eu.wasm": "sha256-M9f0JXpNgGWuMwzXn1iBexnTpS40ugWweqxchWABxk0=",
       "System.Collections.Concurrent.wasm": "sha256-8SdbNm0dHynN6lguowczzUoz94V6znTRltGwd+IX0rk=",
       "System.Collections.wasm": "sha256-RhduyXujtpu+7KGO3m8nrLxoo/Iztg4uDBEGyQRtBp0=",
       "System.ComponentModel.wasm": "sha256-4gSYPm96L8CT5pKE25MQFQR0tJyEQi2zi4BO8+YEzwk=",
