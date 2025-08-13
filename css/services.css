@@ -1,0 +1,226 @@
+﻿/* Conteneur principal avec le même fond que l'accueil */
+.services-container {
+  min-height: 100vh;
+  background-image: url('../images/background_bleute_4k.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: grid;
+  grid: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Logo en haut à gauche (case 1,1) */
+.logo-top-left {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .logo-top-left img {
+    width: 450px;
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 5px 15px rgba(0,150,255,0.3));
+    transition: all 0.3s ease;
+  }
+
+    .logo-top-left img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 8px 25px rgba(0,150,255,0.5));
+    }
+
+/* Service au centre (case 2,2) */
+.service-center {
+  grid-column: 2;
+  grid-row: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Service en bas à droite (case 3,3) */
+.service-bottom-right {
+  grid-column: 3;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Carte de service commune */
+.service-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  transition: all 0.3s ease;
+  max-width: 450px;
+}
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(0,168,255,0.5);
+    box-shadow: 0 15px 50px rgba(0,150,255,0.3);
+  }
+
+/* Icônes de service */
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Titres */
+.service-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #00c9ff;
+  text-align: center;
+  background: #00a8ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Contenu des services */
+.service-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+  .service-content ul li {
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    position: relative;
+    color: #b0d4f1;
+  }
+
+    .service-content ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #00c9ff;
+    }
+
+.service-description {
+  color: #b0d4f1;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+/* Bouton retour */
+.back-button-container {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.btn-back {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  color: #b0d4f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+  .btn-back:hover {
+    background: rgba(0,150,255,0.2);
+    border-color: rgba(0,150,255,0.5);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .service-center {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 280px auto 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-bottom-right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-top-left img {
+    width: 150px;
+  }
+
+  .service-card {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+    .service-card h2 {
+      font-size: 1.5rem;
+    }
+
+  .service-center {
+    margin-top: 200px;
+  }
+}
